@@ -76,7 +76,12 @@ class Test {
 			$result[] = $arr * 0.9;
 		}
 
-		return $result;
+		unset($array[0]);
+		unset($array[1]);
+		unset($array[2]);
+		$output = $result + $array;
+
+		return $output;
 	}
 
 	// 8. Klasėje Test parašykite metoda storeRandom(), kurį iškvietus, būtų sukuriamas failas "random.txt", į kurį pridedama nauja eilutė su atsitiktiniu skaičiumi tarp 1990 ir 2017.		
@@ -108,7 +113,7 @@ class Test {
 			} 
 
 
-		return implode(" ", $textArray);;
+		return implode(" ", $textArray);
 
 	}
 
