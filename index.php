@@ -2,10 +2,10 @@
 
 require "class.php";
 
-$vardas = new vardas ('Eidvilas');
-$vardas -> sakykVarda();
 
-$myTest  = new Test();
+
+$myTest  = new Test('Eidvilas');
+$myTest  -> sakykVarda();
 $myTest  ->dayToday();
 $myTest  ->storeToCookie();
 

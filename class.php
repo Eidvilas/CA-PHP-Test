@@ -1,26 +1,25 @@
 <?php
 
-class vardas {
-  public $name;
+	// 1. Atskirame faile sukurkite klasę Test, kurioje būtų konstruktorius, kuris kuriant objektą išvestų į ekraną Jūsų vardą.
 
-
-  public function __construct ($name) {
-    $this->name = $name;
-  }
-
-
-  public function sakykVarda() {
-  		echo $this->name . "<br />";
-  }
-}
 
 class Test {
 
+	// 1. Atskirame faile sukurkite klasę Test, kurioje būtų konstruktorius, kuris kuriant objektą išvestų į ekraną Jūsų vardą.
+
+	public $name;
+
+	  public function __construct ($name) {
+	    $this->name = $name;
+	  }
+
+	  public function sakykVarda() {
+	  		echo $this->name . "<br />";
+	  }
+
 	public $data;
 
-	// 5. Klasėje Test sukurkite atributą $language, kurio reikšmė pagal nutylėjimą būtų "LT".
-	public $language = "LT";
-
+	// 4. Klasėje Test sukurkite metodą dayToday() , kuris į ekraną išvestų šios dienos datą formatu "2017-11-09".
 
 	public function dayToday(){
 		$currentDate = date('Y-m-d', time());
@@ -28,6 +27,8 @@ class Test {
 		$this->data = $currentDate;
 
 	}
+
+	// 3. Klasėje Test sukurkite metodą storeToCookie(), kuris sukurtų Cookie pavadinimu test_today ir į jį įrašytų rezultatą gautą iš dayToday(). Cookie turėtų galioti savaitę.
 
 	public function storeToCookie(){
 		$cookie_name = "test_today";
@@ -44,6 +45,10 @@ class Test {
 			return FALSE;
 		}
 	}
+
+	// 5. Klasėje Test sukurkite atributą $language, kurio reikšmė pagal nutylėjimą būtų "LT".
+	public $language = "LT";
+
 
 	// 6. Klasėje Test sukurkite metodą setLanguage(), kuriam padavus reikšmes "Lithuania", "Russia" arba "Poland", klasės atributui $language būtų priskirimi šalių kodai atitinkamai "LT", "RU" arba "PL".
 
@@ -111,7 +116,7 @@ class Test {
 
 	// 11. Remiantis klase Test sukurkite objektą $myTest ir kviesdami jo metodus pademonstruokite jų veikimą.
 
-	
+
 
 
 
